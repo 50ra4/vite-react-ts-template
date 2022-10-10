@@ -39,5 +39,16 @@
     "ts-node": "10.9.1",
     "typescript": "4.6.4",
     "vite": "3.1.0"
-  }
+  },
+  "author": "50ra4",
+  "license": "MIT",
+  "description": "React + TypeScript development template using Vite",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/50ra4/vite-react-ts-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/50ra4/vite-react-ts-template/issues"
+  },
+  "homepage": "https://github.com/50ra4/vite-react-ts-template#readme"
 }
