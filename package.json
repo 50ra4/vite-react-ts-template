@@ -12,13 +12,23 @@
     "lint:eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "check-type": "tsc --noEmit",
-    "test": "jest -c ./jest.config.ts"
+    "test": "jest -c ./jest.config.ts",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "7.19.3",
+    "@storybook/addon-actions": "6.5.12",
+    "@storybook/addon-essentials": "6.5.12",
+    "@storybook/addon-interactions": "6.5.12",
+    "@storybook/addon-links": "6.5.12",
+    "@storybook/builder-vite": "0.2.4",
+    "@storybook/react": "6.5.12",
+    "@storybook/testing-library": "0.0.13",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@types/react": "18.0.17",
@@ -26,11 +36,13 @@
     "@typescript-eslint/eslint-plugin": "5.39.0",
     "@typescript-eslint/parser": "5.39.0",
     "@vitejs/plugin-react": "2.1.0",
+    "babel-loader": "8.2.5",
     "eslint": "8.25.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-react": "7.31.9",
     "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-storybook": "0.6.5",
     "husky": "8.0.1",
     "jest": "29.1.2",
     "jest-environment-jsdom": "29.1.2",

@@ -11,6 +11,12 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
+  overrides: [
+    {
+      files: ['*.stories.@(ts|tsx|js)'],
+      extends: ['plugin:storybook/recommended'],
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -37,6 +43,13 @@ module.exports = {
   rules: {
     'import/no-unresolved': 'off',
     'sort-imports': 'off',
-    'import/order': ['error', { alphabetize: { order: 'asc' } }],
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
   },
 };
