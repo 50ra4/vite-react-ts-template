@@ -32,10 +32,7 @@ module.exports = {
       version: 'detect',
     },
     'import/resolver': {
-      node: {
-        extensions: ['.ts', '.tsx'],
-        paths: ['./src'],
-      },
+      typescript: {},
     },
   },
   plugins: ['react', '@typescript-eslint'],
