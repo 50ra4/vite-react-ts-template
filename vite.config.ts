@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   resolve: {
     alias: [
-      { find: '@components', replacement: '/src/presentation/components' },
+      { find: '@/components', replacement: '/src/presentation/components' },
       { find: 'src', replacement: '/src' },
     ],
   },
