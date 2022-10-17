@@ -1,5 +1,5 @@
 import type { ComponentStoryObj, ComponentMeta } from '@storybook/react';
-import { SampleComponent } from './SampleComponent';
+import { SampleComponent } from '@/components/SampleComponent/SampleComponent';
 
 export default {
   component: SampleComponent,
