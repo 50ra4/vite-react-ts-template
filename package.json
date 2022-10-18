@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint:prettier": "prettier --write 'src/**/*.{js,ts,tsx}'",
     "lint:eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
@@ -14,7 +14,8 @@
     "check-type": "tsc --noEmit",
     "test": "jest -c ./jest.config.ts",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "cp gh-pages/manager-head.html .storybook && build-storybook -s public -o docs/storybook && rm -f .storybook/manager-head.html",
+    "generate-gh-pages": "npm run build && rm -rf docs && cp -r dist docs && npm run build-storybook"
   },
   "dependencies": {
     "react": "18.2.0",
