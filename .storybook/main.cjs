@@ -19,9 +19,12 @@ module.exports = {
     const { config: userConfig } = await loadConfigFromFile(
       path.resolve(__dirname, '../vite.config.ts'),
     );
+    // deploy to sub directory for gh-pages
+    const base = process.env.BASE_PATH || config.base;
 
     return mergeConfig(config, {
       ...userConfig,
+      base,
       // manually specify plugins to avoid conflict
       plugins: [],
     });

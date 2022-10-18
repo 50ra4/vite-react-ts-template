@@ -14,7 +14,7 @@
     "check-type": "tsc --noEmit",
     "test": "jest -c ./jest.config.ts",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "cp gh-pages/manager-head.html .storybook && build-storybook -s public -o docs/storybook && rm -f .storybook/manager-head.html",
+    "build-storybook": "cp gh-pages/manager-head.html .storybook && BASE_PATH=/vite-react-ts-template/storybook/ build-storybook -s public -o docs/storybook && rm -f .storybook/manager-head.html",
     "generate-gh-pages": "npm run build && rm -rf docs && cp -r dist docs && npm run build-storybook"
   },
   "dependencies": {
