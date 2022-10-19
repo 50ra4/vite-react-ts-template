@@ -11,9 +11,7 @@
       const paths = window.location.pathname.slice(1).split('/'); // [repo-name, book, 123]
       const [subDirectory, ...restPath] = paths;
       window.location.href = `${origin}/${subDirectory}/?_p=${encodeURIComponent(
-        `${restPath.join('/')}${window.location.search}${
-          window.location.hash
-        }}`,
+        `${restPath.join('/')}${window.location.search}${window.location.hash}`,
       )}`;
     </script>
   </head>
