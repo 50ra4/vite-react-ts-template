@@ -4,7 +4,8 @@ function redirect() {
   if (!params) {
     return;
   }
-  window.location.href = params;
+  console.log(params);
+  history.replaceState(null, '', params);
 }
 
 redirect();
