@@ -1,6 +1,5 @@
 const path = require('path');
 const { loadConfigFromFile, mergeConfig } = require('vite');
-
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -8,9 +7,9 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: '@storybook/builder-vite',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
   features: {
     storyStoreV7: true,
@@ -24,5 +23,8 @@ module.exports = {
       // manually specify plugins to avoid conflict
       plugins: [],
     });
+  },
+  docs: {
+    autodocs: true,
   },
 };
