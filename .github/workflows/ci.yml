@@ -15,7 +15,7 @@ jobs:
     # node version
     strategy:
       matrix:
-        node-version: ['16.15']
+        node-version: ['18.15.0']
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -37,7 +37,7 @@ jobs:
       - name: check type
         run: |
           npm run check-type
-          
+
       # check build
       - name: check build
         run: |
