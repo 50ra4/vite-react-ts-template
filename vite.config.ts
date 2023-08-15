@@ -6,7 +6,7 @@ export default defineConfig({
   // for deploy to sub directory
   base: process.env.BASE_PATH,
   resolve: {
-    alias: [{ find: 'src', replacement: '/src' }],
+    alias: [{ find: '@', replacement: '/src' }],
   },
   plugins: [react()],
 });

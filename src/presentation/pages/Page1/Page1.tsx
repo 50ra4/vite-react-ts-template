@@ -1,5 +1,5 @@
 import React from 'react';
-import { useThrowError } from 'src/hooks/useThrowError';
+import { useThrowError } from '@/hooks/useThrowError';
 
 function Page1() {
   const { throwError } = useThrowError();
