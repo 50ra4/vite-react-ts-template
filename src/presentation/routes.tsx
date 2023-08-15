@@ -1,13 +1,13 @@
 import React, { lazy } from 'react';
 import { RouteProps } from 'react-router-dom';
 
-const TopPage = lazy(() => import('src/presentation/pages/TopPage/TopPage'));
+const TopPage = lazy(() => import('@/presentation/pages/TopPage/TopPage'));
 export const ErrorPage = lazy(
-  () => import('src/presentation/pages/ErrorPage/ErrorPage'),
+  () => import('@/presentation/pages/ErrorPage/ErrorPage'),
 );
-const Page1 = lazy(() => import('src/presentation/pages/Page1/Page1'));
-const Page2 = lazy(() => import('src/presentation/pages/Page2/Page2'));
-const Page3 = lazy(() => import('src/presentation/pages/Page3/Page3'));
+const Page1 = lazy(() => import('@/presentation/pages/Page1/Page1'));
+const Page2 = lazy(() => import('@/presentation/pages/Page2/Page2'));
+const Page3 = lazy(() => import('@/presentation/pages/Page3/Page3'));
 
 export const ROUTES: RouteProps[] = [
   {

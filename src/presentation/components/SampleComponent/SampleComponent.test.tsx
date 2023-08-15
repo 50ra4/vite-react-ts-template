@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 import '@testing-library/jest-dom';
-import { SampleComponent } from '@/components/SampleComponent/SampleComponent';
+import { SampleComponent } from '@/presentation/components/SampleComponent/SampleComponent';
 
 describe('SampleComponent.tsx', () => {
   test('render SampleComponent', () => {
