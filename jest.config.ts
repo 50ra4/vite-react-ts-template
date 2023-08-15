@@ -7,7 +7,6 @@ const config: Config.InitialOptions = {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
   moduleNameMapper: {
-    '^@/components/(.*)$': '<rootDir>/src/presentation/components/$1',
     '^src/(.*)$': '<rootDir>/src/$1',
   },
 };
