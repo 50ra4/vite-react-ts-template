@@ -80,6 +80,14 @@ npm run storybook
 npm run build-storybook
 ```
 
+## TypeDoc
+
+作成した関数や hooks のインターフェースを TypeDoc によってドキュメンテーションできます。
+
+```
+$ npm run build-typedoc
+```
+
 ## CI
 
 github actions を用いて CI を実行しています。
