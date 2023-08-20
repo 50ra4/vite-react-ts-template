@@ -40,7 +40,7 @@ module.exports = {
     },
   },
   plugins: ['react', '@typescript-eslint'],
-  ignorePatterns: ['.eslintrc.cjs', '*.config.ts'],
+  ignorePatterns: ['.eslintrc.cjs', '*.config.(ts|cjs)'],
   rules: {
     'import/no-unresolved': 'off',
     'sort-imports': 'off',
