@@ -3,6 +3,16 @@
 このプロジェクトは Vite、TypeScript、React を用いた Web アプリケーション開発向けの Template です。
 一部、サンプルとなるソースコードを含んでいます。
 
+## How To Template
+
+レポジトリ右上の緑の「Use this template」を押すことで、自分の Github アカウントに複製することができます。
+
+レポジトリ URL: https://github.com/50ra4/vite-react-ts-template
+
+![image](https://github.com/50ra4/vite-react-ts-template/assets/48591598/905405f9-aa49-4cdb-88d1-4e2af5bcf2fe)
+
+特段、状態管理やスタイリングのライブラリなどを含んでいないので、お好みで`npm install`してお使いください。
+
 ## Setup
 
 `git clone`後、プロジェクト直下で npm package の依存関係を install します。
