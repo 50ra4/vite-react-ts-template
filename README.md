@@ -112,3 +112,10 @@ github actions を用いて、作成した Web アプリケーションと story
 ```
 npm run generate-gh-pages
 ```
+
+### github pagesの公開方法
+
+このTemplateから作成したGithubのRepositoryの`Settings`のタブから `Actions > General`を選択し、`Workflow permissions`を`Read and write permissions`に変更することでgithub pagesに公開されます。
+
+<img width="760" alt="スクリーンショット 2023-09-09 20 25 37" src="https://github.com/50ra4/vite-react-ts-template/assets/48591598/547e201d-dfe1-4515-b360-4d94d220cc86">
+
